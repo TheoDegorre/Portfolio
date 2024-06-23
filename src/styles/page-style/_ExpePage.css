@@ -1,0 +1,193 @@
+.expe-section {
+  margin: 2rem;
+  padding: 2rem;
+  width: 95vw;
+  height: 75vh;
+
+  display: flex;
+  gap: 1rem;
+  /* overflow-x: auto; */
+  -webkit-overflow-scrolling: touch;
+}
+
+.expe-card {
+  /* margin: 2rem; */
+
+  background-color: rgb(52, 47, 111, 0.95);
+  color: white;
+  flex-shrink: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid black;
+
+  & img {
+    align-self: start;
+    width: 5rem;
+    height: auto;
+  }
+  & h1 {
+    padding: 1rem;
+    font-size: xxx-large;
+    text-align: center;
+    outline: 2px solid black;
+  }
+
+  & h2 {
+    text-align: center;
+    justify-content: end;
+    align-items: end;
+    outline: 2px solid black;
+    padding: 1rem;
+  }
+  & p {
+    outline: 2px solid black;
+  }
+}
+
+/* ------------------ */
+
+@-webkit-keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+
+#scene {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 80vw;
+  height: 70vh;
+  position: absolute;
+  top: 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgb(44, 44, 110, 0.95);
+  overflow: hidden;
+  color :white;
+}
+
+#left-zone {
+  height: 75%;
+  flex-grow: 0;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: left;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] ~ label {
+  display: block;
+  opacity: 0.5;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2rem;
+}
+
+input[type="radio"] ~ label:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+input[type="radio"] ~ .content {
+  position: absolute;
+  left: 350px;
+  top: -400px;
+  width: 650px;
+  height: 400px;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: slideout;
+  animation-name: slideout;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap : 20px;
+}
+
+input[type="radio"] ~ .content p {
+ 
+  max-width: 90%;
+  font-size: x-large;
+  text-align: center;
+}
+
+input[type="radio"] ~ .content img{
+    max-width: 10%;
+}
+
+input[type="radio"]:checked ~ label {
+  opacity: 1;
+  -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  border-right: solid 10px white;
+}
+
+input[type="radio"]:checked ~ .content {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+

@@ -1,0 +1,26 @@
+.title-home{
+    color: white;
+    font-size: xx-large;
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    gap : 5rem;
+
+
+    
+    
+  & h1 {
+    opacity: 0;
+    font-size: 100px;
+    animation : 1s ease-in 1s apparition;
+    animation-fill-mode: forwards; 
+    position: relative;
+    top: 50%;
+    left : 50%;
+  }    
+}
+
+@keyframes apparition {
+0% { opacity: 0; }
+100% {opacity: 1;}
+}  

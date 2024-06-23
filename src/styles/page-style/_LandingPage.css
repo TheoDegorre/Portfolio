@@ -1,0 +1,42 @@
+.link-contents {
+  border: black 1px solid;
+}
+
+#pixel-img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0% 0%, 60% 0%, 30% 100%, 0% 100%);
+  object-fit: cover;
+
+
+}
+
+#design-img {
+  position: absolute;
+  right: 0;
+  z-index:0;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  right:0;
+  clip-path: polygon(55% 0%, 100% 0%, 100% 100%, 15% 100%);
+
+  object-fit: cover;
+
+
+}
+
+#logo-clip{
+  z-index: 1;
+  position: absolute;
+  top : 32vh;
+  left : 39vw;
+  
+  width : 15vw;
+  height: auto;
+}
+

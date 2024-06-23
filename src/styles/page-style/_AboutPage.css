@@ -1,0 +1,47 @@
+.about-section {
+  margin: 2rem;
+
+  display: flex;
+  gap: 30px;
+
+  & #avatar {
+    width: 15rem;
+    align-self: center;
+    background-color:rgb(44, 44, 110, 0.95);
+    box-shadow: rgba(44, 44, 109, 0.4) -5px 5px,
+      rgba(44, 44, 109, 0.3) -10px 10px, rgba(44, 44, 109, 0.2) -15px 15px,
+      rgba(44, 44, 109, 0.1) -20px 20px, rgba(44, 44, 109, 0.05) -25px 25px;
+    outline: 2px solid rgba(44, 44, 109, 0.4);
+    transition: all 1s ease-in-out;
+  }
+
+  & #avatar:hover{
+    transition: all 1s ease-in-out;
+  }
+}
+& figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color:white;
+background-color: rgba(44, 44, 109, 0.95);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+  & h1,
+  h3 {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  & h1 {
+    font-size: var(--font-size-h1);
+  }
+  & h3 {
+    font-size: var(--font-size-h4);
+  }
+  & p {
+    padding: 1rem 2rem;
+    font-size: var(--font-size-text);
+  }
+}

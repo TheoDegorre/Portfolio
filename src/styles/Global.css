@@ -1,0 +1,88 @@
+@import "./page-style/_LandingPage.css";
+@import "./page-style/_AboutPage.css";
+@import "./page-style/_ErrorPage.css";
+@import "./composants-style/_Acceuil.css";
+@import "./composants-style/_navbar.css";
+@import "./page-style/_ContactPage.css";
+@import "./page-style/_ExpePage.css";
+@import "./page-style/_HomePage.css";
+@import "./page-style/_ProjectPage.css";
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../../src/assets/font/Barlow/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Pixel";
+  src: url("../../src/assets/font/exepixelperfect.medium.ttf");
+}
+
+:root {
+  /* ---Font--- */
+
+  --pixel-font-family: "Pixel";
+  --modern-font-family: "Barlow";
+  --font-size-h1: 42px;
+  --font-size-h2: 38px;
+  --font-size-h3: 32px;
+  --font-size-h4: 28px;
+  --font-size-text: 25px;
+
+  --primary-font-color: black;
+  --secondary-font-color: white;
+
+  --pixel-cursor: url("../../assets/carre-cursor.png");
+
+  /* ---Background--- */
+
+  --primary-bg-color:rgb(52, 47, 111, 0.95) ;
+  --secondary-bg-color: linear-gradient(rgba(0, 0, 0, 0.07) 60%, #1a191d 100%);
+  --filter-bg-color: hsl(148, 64%, 76%, 0.7);
+}
+
+.design {
+  /* ---Font--- */
+
+  --primary-font-family: Agdasima;
+  --font-size-h1: 42px;
+  --font-size-h2: 38px;
+  --font-size-h3: 32px;
+  --font-size-h4: 28px;
+  --font-size-text: 20px;
+
+  --primary-font-color: black;
+  --secondary-font-color: white;
+
+  /* ---Background--- */
+
+  --primary-bg-color: radial-gradient(
+    circle,
+    #bbaeee 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  --secondary-bg-color: linear-gradient(rgba(0, 0, 0, 0.07) 60%, #1a191d 100%);
+  --filter-bg-color: hsl(148, 64%, 76%, 0.7);
+}
+
+* {
+  /* cursor: url("../assets/pixel-cursor.png"), pointer; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline:  3px solid black; */
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: var(--pixel-font-family);
+  background-color: #a0a1fe;
+  background-image: url("./src/assets/background/background_8-bit-graphics.jpg");
+  background-size: 100vw 130vh;
+  background-repeat: no-repeat;
+
+}
+
+

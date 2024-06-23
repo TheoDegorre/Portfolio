@@ -1,0 +1,185 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 75%;
+  height: 80vh;
+  position: absolute;
+  left: 10em;
+  right: 0;
+  bottom: 0;
+  top: 5em;
+  background-color: var(--primary-bg-color);
+  gap: 1rem;
+}
+.contact-icon {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.contact-icon .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.contact-icon .icon-content .tooltip {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.contact-icon .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: 60px;
+}
+.contact-icon .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.contact-icon .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.contact-icon .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.contact-icon .icon-content a:hover {
+  color: white;
+}
+.contact-icon .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.contact-icon .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.contact-icon .icon-content a[data-social="linkedin"] .filled,
+.contact-icon .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.contact-icon .icon-content a[data-social="github"] .filled,
+.contact-icon .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+
+/* --------------------------------- */
+
+.tooltip-container {
+  margin-top: 5em;
+  height: 70px;
+  width: 110px;
+  border-radius: 5px;
+  background-color: #fff;
+  background-image: linear-gradient(
+    to left bottom,
+    #f2f5f8,
+    #ecf1f2,
+    #e7eceb,
+    #e3e7e4,
+    #e1e2de
+  );
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.tooltip-container::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  border-radius: 5px;
+  background-color: fff;
+  background-image: linear-gradient(
+    to left bottom,
+    #1288ff,
+    #e4eaec,
+    #d8dfde,
+    #cdd3cf,
+    #c5c7c1
+  );
+  width: 100%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(-150deg) translateY(-110%);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.tooltip-container .text {
+  color: rgb(32, 30, 30);
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 0.5em;
+}
+
+.email-tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid rgb(206, 204, 204);
+  height: 4em;
+  width: 10em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 10px salmon;
+}
+.tooltip-container:hover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.tooltip-container:hover::before {
+  transform: rotateY(0);
+  background-image: none;
+  background-color: white;
+}
+
+.tooltip-container:hover .email-tooltip {
+  top: -90px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}

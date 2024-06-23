@@ -1,0 +1,185 @@
+.project-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+
+  width: 100vw;
+  padding: 200px;
+  height: 86vh;
+  gap: 1rem;
+
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: auto;
+  bottom: 0;
+}
+
+.a-modal {
+  text-decoration: none;
+  padding: 15px;
+  background-color: rgb(52, 47, 111, 0.95);
+  border: 2px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  height: 5em;
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal_content {
+  border-radius: 4px;
+  position: relative;
+  height: 90%;
+  max-width: 90%;
+  min-width: 90%;
+  background: rgb(52, 47, 111, 0.95);
+  padding: 1.5em 2em;
+
+  display: flex;
+  justify-content: center;
+}
+
+.left_modal_content {
+  clip-path: polygon(0 0, 80% 0, 55% 100%, 0 100%);
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  left: 50px;
+  top: 70px;
+  background: none;
+
+  & #img-project {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+.right_modal_content {
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 20% 100%);
+
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: white;
+  display: flex;
+  justify-content: end;
+
+  & #description-section {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & .project-header {
+      display: inline-flex;
+      width: 100%;
+      height: 20%;
+      align-items: center;
+      justify-content: center;
+
+      & img {
+        width: 5em;
+        height: 5em;
+        margin: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      & h1 {
+        font-size: 40px;
+      }
+    }
+  }
+
+  & .project-description {
+    width: 80%;
+    font-size: 24px;
+  }
+
+
+  & .project-link {
+    display: flex;
+    gap: 1rem;
+
+    & .a-demo-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: var(--primary-bg-color);
+      text-decoration: none;
+      width: 6rem;
+      height: 2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 9px 20px 8px;
+      text-align: center;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    & .a-repo-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: var(--primary-bg-color);
+      text-decoration: none;
+      width: 6rem;
+      height: 2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 9px 20px 8px;
+      text-align: center;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    & .false {
+      background-color: gray;
+      cursor:default;
+    }
+  }
+}
+
+.modal_close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  text-decoration: none;
+}
+
+
+
