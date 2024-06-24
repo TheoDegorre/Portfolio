@@ -1,6 +1,6 @@
 import { useState } from "react";
-import pixelAvatar from "../../public/assets/images/profile_image_pixel-rm.png";
-import netAvatar from "../../public/assets/images/profile_image.png";
+import pixelAvatar from "./images/profile_image_pixel-rm.png";
+import netAvatar from "./images/profile_image.png";
 
 function AboutPage() {
   const [avatarIsHovered, setAvatarIsHovered] = useState(false);
@@ -8,7 +8,8 @@ function AboutPage() {
   return (
     <>
       <section className="about-section">
-        <img id="avatar"
+        <img
+          id="avatar"
           onMouseEnter={() => setAvatarIsHovered(true)}
           onMouseLeave={() => setAvatarIsHovered(false)}
           src={avatarIsHovered ? netAvatar : pixelAvatar}
