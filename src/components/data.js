@@ -2,8 +2,8 @@ const project = [
   {
     id: 1,
     name: "The Wild Fork",
-    logo_url: "/assets/images/projet/thewildfork_logo.png",
-    image_url: "/assets/images/projet/thewildfork_page.png",
+    logo_url: "/public/assets/images/projet/thewildfork_logo.png",
+    image_url: "/public/assets/images/projet/thewildfork_page.png",
     description:
       "The Wild Fork is a static website with an goal : Let you find the best place to lunch ! It's realized with HTML, CSS and a little bit of JS",
     is_demo: "false",
@@ -37,7 +37,6 @@ const project = [
     url_repo:
       "https://github.com/WildCodeSchool-2024-02/JS-Nantes-RamCSS-P3-PoPote.git",
   },
-
   {
     id: 4,
     name: "Rick&Morty",
@@ -147,7 +146,7 @@ const experience = [
     id: 3,
     job_name: "Experimentation technician",
     company_name: "Japan Agro Service",
-    logo_url: "/assets/images/experience/logo_jas.jpg" ,
+    logo_url: "/assets/images/experience/logo_jas.jpg",
     period: " 03/17 to 11/17",
     description:
       "Setting up experimental plots. Monitoring plant health and growth. Recording data on plant growth, development, yield, and other variables. Applying phytosanitary treatment.",
