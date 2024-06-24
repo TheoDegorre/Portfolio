@@ -8,6 +8,7 @@
 @import "./page-style/_HomePage.css";
 @import "./page-style/_ProjectPage.css";
 
+
 @font-face {
   font-family: "Barlow";
   src: url("../../src/assets/font/Barlow/BarlowCondensed-Regular.ttf");

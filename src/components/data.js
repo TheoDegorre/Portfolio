@@ -3,7 +3,7 @@ const project = [
     id: 1,
     name: "The Wild Fork",
     logo_url: "./src/assets/images/projet/thewildfork_logo.png",
-    image_url:"./src/assets/images/projet/thewildfork_page.png",
+    image_url: "./src/assets/images/projet/thewildfork_page.png",
     description:
       "The Wild Fork is a static website with an goal : Let you find the best place to lunch ! It's realized with HTML, CSS and a little bit of JS",
     is_demo: "false",
@@ -14,33 +14,35 @@ const project = [
   {
     id: 2,
     name: "greenDoor",
-    logo_url: "./src/assets/images/projet/greenDoor_logo.svg",
-    image_url:"./src/assets/images/projet/greendoor_page.png",
+    logo_url: "..assets/images/projet/greenDoor_logo.svg",
+    image_url: "../src/assets/images/projet/greendoor_page.png",
     description:
       "greenDoor is an interactiv website which guide you to the perfect greenplant for your home. It provide advise for care, a quizz to help your choice of plants and a favorite page to keep your collection",
     is_demo: "true",
     url_demo: "https://greendoor-eight.vercel.app/",
     is_repo: "true",
-    url_repo: "https://github.com/TheoDegorre/Project-2-JS-Nantes-RAMCss-II-P2-GreenDoor.git",
+    url_repo:
+      "https://github.com/TheoDegorre/Project-2-JS-Nantes-RAMCss-II-P2-GreenDoor.git",
   },
   {
     id: 3,
     name: "Po'Pote",
-    logo_url:"./src/assets/images/projet/popote_logo2.png",
-    image_url:"./src/assets/images/projet/popote_page.png",
+    logo_url: "./src/assets/images/projet/popote_logo2.png",
+    image_url: "./src/assets/images/projet/popote_page.png",
     description:
       "Po'pote is a complete website to explore, create and store your recipes. With an account you can create and keep your favorite meal but also create a menu for a week and keep and eye on the calories.",
     is_demo: "false",
     url_demo: "",
     is_repo: "true",
-    url_repo: "https://github.com/WildCodeSchool-2024-02/JS-Nantes-RamCSS-P3-PoPote.git",
+    url_repo:
+      "https://github.com/WildCodeSchool-2024-02/JS-Nantes-RamCSS-P3-PoPote.git",
   },
 
   {
     id: 4,
     name: "Rick&Morty",
     logo_url: "./src/assets/images/projet/ReactRick&Morty_logo.png",
-    image_url:"./src/assets/images/projet/ReactRick&Morty_page.png",
+    image_url: "./src/assets/images/projet/ReactRick&Morty_page.png",
     description:
       "Rick&Morty is an exercice design by MrLootman for train on React componants and hooks with an API fetch of a marvellous content based on Rick and Morty's series",
     is_demo: "false",
@@ -52,7 +54,7 @@ const project = [
     id: 5,
     name: "TrashExpress",
     logo_url: "./src/assets/images/projet/trashexpress_logo.png",
-    image_url:"./src/assets/images/projet/trashexpress_page.png",
+    image_url: "./src/assets/images/projet/trashexpress_page.png",
     description:
       "TrashExpress is a small website created in less 2 days. The purpose was to create a site on the theme of nature. So with my team we decided to do a satirical site on wild dumping, but with an educational aim. We used some cool features: like a search bar and an interactive map. Without forgetting a little game : T-rex game like  ",
     is_demo: "false",
@@ -64,7 +66,7 @@ const project = [
     id: 6,
     name: "MorganEcholsCSS",
     logo_url: "./src/assets/images/projet/morganEcholCSS_logo.png",
-    image_url:"./src/assets/images/projet/morganEcholCSS_logo.png",
+    image_url: "./src/assets/images/projet/morganEcholCSS_logo.png",
     description:
       "Morgan-EcholsCSS is an very little project on basic CSS. The goal was to reproduce the amazing painting of the artist on CSS with stacking some grid",
     is_demo: "false",
@@ -76,7 +78,7 @@ const project = [
     id: 7,
     name: "React-Mario",
     logo_url: "./src/assets/images/projet/ReactMario_logo.png",
-    image_url:"./src/assets/images/projet/ReactMario_page.png",
+    image_url: "./src/assets/images/projet/ReactMario_page.png",
     description:
       "React-Mario is an little exercice of a Api fetch with react, the goal was to do a fonctionnal page on a short time",
     is_demo: "false",
