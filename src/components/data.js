@@ -42,7 +42,7 @@ const project = [
     id: 4,
     name: "Rick&Morty",
     logo_url: "/assets/images/projet/ReactRick&Morty_logo.png",
-    image_url: "/assets/images/projet/ReactRick&Morty_page.png",
+    image_url: "/assets/images/projet/ReactRick&Morty_Page.png",
     description:
       "Rick&Morty is an exercice design by MrLootman for train on React componants and hooks with an API fetch of a marvellous content based on Rick and Morty's series",
     is_demo: "false",

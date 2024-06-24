@@ -66,11 +66,9 @@
 }
 
 * {
-  /* cursor: url("../assets/pixel-cursor.png"), pointer; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline:  3px solid black; */
 }
 
 body {

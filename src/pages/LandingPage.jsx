@@ -16,7 +16,7 @@ function LandingPage() {
           alt=""
         />
 
-        <img id="logo-clip" src="src/assets/design_logo.png" alt="" />
+        <img id="logo-clip" src="/design_logo.png" alt="" />
       </NavLink>
     </>
   );
