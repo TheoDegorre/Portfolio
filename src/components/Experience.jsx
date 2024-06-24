@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 
 function Experience({ experience }) {
-  console.log("%c⧭", "color: #00e600", experience);
-  console.log("ceci est is_demo",experience.is_demo);
+
 
   return (
     <>

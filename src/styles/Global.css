@@ -11,12 +11,12 @@
 
 @font-face {
   font-family: "Barlow";
-  src: url("../../src/assets/font/Barlow/BarlowCondensed-Regular.ttf");
+  src: url("../../public/assets/font/Barlow/BarlowCondensed-Regular.ttf");
 }
 
 @font-face {
   font-family: "Pixel";
-  src: url("../../src/assets/font/exepixelperfect.medium.ttf");
+  src: url("../../public/assets/font/exepixelperfect.medium.ttf");
 }
 
 :root {
@@ -33,7 +33,7 @@
   --primary-font-color: black;
   --secondary-font-color: white;
 
-  --pixel-cursor: url("../../assets/carre-cursor.png");
+  --pixel-cursor: url("../public/assets/carre-cursor.png");
 
   /* ---Background--- */
 
@@ -80,7 +80,7 @@ body {
   overflow: hidden;
   font-family: var(--pixel-font-family);
   background-color: #a0a1fe;
-  background-image: url("./src/assets/background/background_8-bit-graphics.jpg");
+  background-image: url("./public/assets/background/background_8-bit-graphics.jpg");
   background-size: 100vw 130vh;
   background-repeat: no-repeat;
 
