@@ -14,8 +14,8 @@ const project = [
   {
     id: 2,
     name: "greenDoor",
-    logo_url: "..assets/images/projet/greenDoor_logo.svg",
-    image_url: "../src/assets/images/projet/greendoor_page.png",
+    logo_url: "../assets/images/projet/greenDoor_logo.svg",
+    image_url: "./assets/images/projet/greendoor_page.png",
     description:
       "greenDoor is an interactiv website which guide you to the perfect greenplant for your home. It provide advise for care, a quizz to help your choice of plants and a favorite page to keep your collection",
     is_demo: "true",
