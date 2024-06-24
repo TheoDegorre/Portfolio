@@ -2,7 +2,7 @@ const project = [
   {
     id: 1,
     name: "The Wild Fork",
-    logo_url: "/public/assets/images/projet/thewildfork_logo.png",
+    logo_url: "/images/projet/thewildfork_logo.png",
     image_url: "/public/assets/images/projet/thewildfork_page.png",
     description:
       "The Wild Fork is a static website with an goal : Let you find the best place to lunch ! It's realized with HTML, CSS and a little bit of JS",
