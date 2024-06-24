@@ -11,12 +11,12 @@ function NavBar() {
   return (
     <nav>
       {/* Audio part */}
-      <audio src="./public/assets/audio/Jaunter-Reset.mp3" autoPlay loop muted={isChecked}/>
+      <audio src="/assets/audio/Jaunter-Reset.mp3" autoPlay loop muted={isChecked}/>
 
       {/* logo */}
 
       <a id="home-logo" href="/home">
-        <img id="home-logo" src="./public/assets/images/logo-pixel_TO.png" alt="logo Théo" />
+        <img id="home-logo" src="/assets/images/logo-pixel_TO.png" alt="logo Théo" />
       </a>
 
       {/* Nav button */}

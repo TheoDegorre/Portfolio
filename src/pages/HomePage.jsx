@@ -1,7 +1,5 @@
 
 
-// import Project from "../components/Project.jsx";
-
 function HomePage() {
   return (
     <div className="title-home">

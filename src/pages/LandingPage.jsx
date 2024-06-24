@@ -7,12 +7,12 @@ function LandingPage() {
       <NavLink className="link-contents" to="/home">
         <img
           id="pixel-img"
-          src="./src/assets/background/background_8-bit-graphics.jpg"
+          src="/assets/background/background_8-bit-graphics.jpg"
           alt=""
         />
         <img
           id="design-img"
-          src="./src/assets/background/squoosh_background_city-horizon.jpg"
+          src="/assets/background/squoosh_background_city-horizon.jpg"
           alt=""
         />
 

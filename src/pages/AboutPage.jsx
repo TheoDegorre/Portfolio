@@ -1,6 +1,6 @@
 import { useState } from "react";
-import pixelAvatar from "../../public/assets/images/profile_image_pixel-rm.png";
-import netAvatar from "../../public/assets/images/profile_image.png";
+import pixelAvatar from "/assets/images/profile_image_pixel-rm.png";
+import netAvatar from "/assets/images/profile_image.png";
 
 function AboutPage() {
   const [avatarIsHovered, setAvatarIsHovered] = useState(false);
