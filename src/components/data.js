@@ -147,7 +147,7 @@ const experience = [
     id: 3,
     job_name: "Experimentation technician",
     company_name: "Japan Agro Service",
-    logo_url: "/assets/images/experience/logo_jas.jpg",
+    logo_url: "/assets/images/experience/logo_jas.jpg" ,
     period: " 03/17 to 11/17",
     description:
       "Setting up experimental plots. Monitoring plant health and growth. Recording data on plant growth, development, yield, and other variables. Applying phytosanitary treatment.",
