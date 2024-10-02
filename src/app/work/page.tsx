@@ -12,7 +12,6 @@ export default function Work() {
               className="border-border dark:border-darkBorder shadow-light dark:shadow-dark rounded-base border-2 bg-main p-4 sm:p-5"
               key={id}
             >
-              {/* Utiliser AspectRatio avec un ratio par défaut, par exemple 16:9 */}
               <div
                 className="border-border dark:border-darkBorder shadow-light dark:shadow-dark !-bottom-[2px] rounded-base border-2"
                 
